@@ -1,2 +1,3 @@
-# git-sync-kubernetes
-Simple Kubernetes git sync url to directory on changes
+# gitrepo-todir-sync 
+
+Simple Kubernetes gitrepo sync to directory on filesystem on changes.
