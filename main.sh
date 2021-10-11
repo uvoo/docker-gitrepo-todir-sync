@@ -3,7 +3,7 @@
 # ALternative https://github.com/presslabs/gitfs
 
 if [ -z ${SETOPTS} ]; then
-  SETOPTS="-e"
+  SETOPTS="-eu"
 fi
 set ${SETOPTS}
 
