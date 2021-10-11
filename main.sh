@@ -4,6 +4,9 @@
 if [ -n ${SINGLEBRANCH} ]; then
  SINGLEBRANCHCMD="--single-branch"
 fi
+if [ -n ${QUIET} ]; then
+ QUIET="--quiet"
+fi
 
 if [ -z ${SETOPTS} ]; then
   SETOPTS="-eu"
