@@ -1,6 +1,9 @@
 #!/usr/bin/env bash
 # Clones repos into directories.
 # ALternative https://github.com/presslabs/gitfs
+if [ -n ${SINGLEBRANCH} ]; then
+ SINGLEBRANCHCMD="--single-branch"
+fi
 
 if [ -z ${SETOPTS} ]; then
   SETOPTS="-eu"
@@ -22,9 +25,6 @@ else
   BRANCHCMD="--branch main"
 fi
 
-if [ -n ${SINGLEBRANCH} ]; then
- SINGLEBRANCHCMD="--single-branch"
-fi
 
 authURL(){
   REPO=$1
